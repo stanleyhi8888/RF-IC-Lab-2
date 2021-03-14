@@ -53,8 +53,8 @@ for i=1:size(freq)
     %Im(i)=imag(YDUT(1,1,i)+YDUT(2,2,i))/2;
 end
 
-rfwrite(SDUT(:,:,1:length(freq)),freq,'q2dut.s2p');
-DUT=sparameters('q2dut.s2p');
+rfwrite(SDUT(:,:,1:length(freq)),freq,'DUT.s2p');
+DUT=sparameters('DUT.s2p');
 
 %{
 TRTL_cal=zeros(2,2,length(freq));
