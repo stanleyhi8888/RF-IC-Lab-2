@@ -54,4 +54,4 @@ plot(freq(start:stop),Z(start:stop));
 figure
 plot(freq(start:stop),E(start:stop));
 
-rfwrite(SDUT(:,:,1:length(freq)), freq, 'q3dut.s2p');
+rfwrite(SDUT(:,:,1:length(freq)), freq, 'DUT.s2p');
